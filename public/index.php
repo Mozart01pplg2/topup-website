@@ -1,7 +1,4 @@
 <?php
-echo "<h2>Topup App berhasil jalan!</h2>";
-echo "<a href='/app/customer/index.php'>Masuk Customer</a>";
-
 require '../includes/db.php';
 $produk = $pdo->query("SELECT * FROM produk WHERE aktif = TRUE")->fetchAll();
 ?>
